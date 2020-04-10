@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **age** | **int** |  | [optional] [default to null]
 **gender** | **String** |  | [optional] [default to null]
 **height** | **num** |  | [optional] [default to null]
+**weigth** | **num** |  | [optional] [default to null]
 **bpm** | **int** |  | [optional] [default to null]
 **spo2** | **int** |  | [optional] [default to null]
 **temperature** | **num** |  | [optional] [default to null]

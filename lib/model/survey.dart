@@ -12,6 +12,8 @@ class Survey {
   
   num height = null;
   
+  num weigth = null;
+  
   int bpm = null;
   
   int spo2 = null;
@@ -51,7 +53,7 @@ class Survey {
 
   @override
   String toString() {
-    return 'Survey[id=$id, timestamp=$timestamp, age=$age, gender=$gender, height=$height, bpm=$bpm, spo2=$spo2, temperature=$temperature, gyroscope=$gyroscope, accelerometer=$accelerometer, skinColor=$skinColor, phoneBrand=$phoneBrand, phoneReference=$phoneReference, referenceGroundTruthMeasurementSystem=$referenceGroundTruthMeasurementSystem, brandGroundTruthMeasurementSystem=$brandGroundTruthMeasurementSystem, videoData=$videoData, covid=$covid, asthma=$asthma, copd=$copd, smoker=$smoker, cardioDisease=$cardioDisease, ild=$ild, shortnessBreath=$shortnessBreath, ]';
+    return 'Survey[id=$id, timestamp=$timestamp, age=$age, gender=$gender, height=$height, weigth=$weigth, bpm=$bpm, spo2=$spo2, temperature=$temperature, gyroscope=$gyroscope, accelerometer=$accelerometer, skinColor=$skinColor, phoneBrand=$phoneBrand, phoneReference=$phoneReference, referenceGroundTruthMeasurementSystem=$referenceGroundTruthMeasurementSystem, brandGroundTruthMeasurementSystem=$brandGroundTruthMeasurementSystem, videoData=$videoData, covid=$covid, asthma=$asthma, copd=$copd, smoker=$smoker, cardioDisease=$cardioDisease, ild=$ild, shortnessBreath=$shortnessBreath, ]';
   }
 
   Survey.fromJson(Map<String, dynamic> json) {
@@ -61,6 +63,7 @@ class Survey {
     age = json['age'];
     gender = json['gender'];
     height = json['height'];
+    weigth = json['weigth'];
     bpm = json['bpm'];
     spo2 = json['spo2'];
     temperature = json['temperature'];
@@ -93,6 +96,8 @@ class Survey {
       json['gender'] = gender;
     if (height != null)
       json['height'] = height;
+    if (weigth != null)
+      json['weigth'] = weigth;
     if (bpm != null)
       json['bpm'] = bpm;
     if (spo2 != null)
