@@ -1,17 +1,21 @@
 part of openapi.api;
 
 class InlineObject {
+  /* The source of the data */
+  String source_ = null;
+  //enum source_Enum {  community,  clinical,  };{
   
   List<SignedUploadFiles> files = [];
   InlineObject();
 
   @override
   String toString() {
-    return 'InlineObject[files=$files, ]';
+    return 'InlineObject[source_=$source_, files=$files, ]';
   }
 
   InlineObject.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
+    source_ = json['source'];
     files = (json['files'] == null) ?
       null :
       SignedUploadFiles.listFromJson(json['files']);
@@ -19,6 +23,8 @@ class InlineObject {
 
   Map<String, dynamic> toJson() {
     Map <String, dynamic> json = {};
+    if (source_ != null)
+      json['source'] = source_;
     if (files != null)
       json['files'] = files;
     return json;
