@@ -18,7 +18,7 @@ class ApiClient {
   final _regList = RegExp(r'^List<(.*)>$');
   final _regMap = RegExp(r'^Map<String,(.*)>$');
 
-  ApiClient({this.basePath = "https://guarded-crag-28391.herokuapp.com"}) {
+  ApiClient({this.basePath = "https://pulseox-prod.herokuapp.com"}) {
     // Setup authentications (key: authentication name, value: authentication).
   }
 

@@ -53,7 +53,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://guarded-crag-28391.herokuapp.com*
+All URIs are relative to *https://pulseox-prod.herokuapp.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
